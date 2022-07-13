@@ -1,25 +1,31 @@
 import React from "react";
 import "./styles.scss";
-import logo from "../assets/logo.png";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 export const Navbar = () => {
   return (
     <nav className="navbar">
-      <a href="#" className="navbar__logo">
-        <img src={logo} alt="logo" />
-      </a>
+      <Logo />
       <ul className="navbar__links">
-        <a href="#" className="navbar_link">
-          Features
-        </a>
-        <a href="#" className="navbar_link">
-          Partners
-        </a>
-        <a href="#" className="navbar_link">
-          Stories
-        </a>
+        <li>
+          <a href="/" className="navbar__link">
+            Features
+          </a>
+        </li>
+        <li>
+          <a href="/" className="navbar__link">
+            Partners
+          </a>
+        </li>
+        <li>
+          <a href="/" className="navbar__link">
+            Stories
+          </a>
+        </li>
       </ul>
-      <button className="navbar__download-btn">Download for free</button>
+      <button type="button" className="navbar__download-btn">
+        Download for free
+      </button>
     </nav>
   );
 };
