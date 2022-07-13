@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(124.53deg, #fc3f5f 0%, #7d61ff 100.32%) no-repeat;
+  height: 100%;
+  max-width: 100%;
+}
+
+button {
+  text-decoration: inherit;
+  background: none;
+}
+
+li {
+  list-style: none;
+}
