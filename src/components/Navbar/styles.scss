@@ -37,3 +37,36 @@
   color: #24282e;
   cursor: pointer;
 }
+
+$screen-sm-max: 576px;
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+.navbar {
+  @include sm {
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+.navbar__links {
+  @include sm {
+    gap: 8px;
+  }
+}
+
+.navbar__link {
+  @include sm {
+    font-size: 10px;
+  }
+}
+
+.navbar__download-btn {
+  @include sm {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+}
